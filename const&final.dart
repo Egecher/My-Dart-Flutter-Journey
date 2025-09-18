@@ -5,8 +5,13 @@ void main(){
 
   // Burada a + b işlemi çalışma zamanında (runtime) hesaplanacağı için const kullanılamaz.
   // Bu nedenle 'final' tercih edilmelidir.
-  final int c = a + b;
+  // final int c = a + b;
 
-  // Ekrana sonucu yazdırıyoruz.
-  print(c);
+  // print(c);
+
+  final List<int> liste1 = [a, b];
+  const List<int> liste2 = [a, b];
+
+  print(liste1);
+  print(liste2);
 }
