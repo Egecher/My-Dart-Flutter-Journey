@@ -3,9 +3,7 @@ void main() {
 
   gelenVeri = null;
 
-  if (gelenVeri == null) {
-    gelenVeri = "Veri çekilemedi";
-  }
+  gelenVeri ??= "Veri çekilemedi";
 
   print(gelenVeri);
 }
