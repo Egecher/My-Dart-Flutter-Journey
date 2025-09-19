@@ -1,7 +1,7 @@
 void main(){
   int not = 75;
 
-  if(not >= 85) {
+  if(not <= 100 && not >= 85) {
     print("Çok iyi");
   } else if (not > 70) {
     print("İyi");
