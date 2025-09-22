@@ -5,4 +5,8 @@ void main(){
     print("Merhaba Dünya");
     i++;
   }
+
+  while(true){//sonsuz döngü
+    print("Merhaba Dünya");
+  }
 }
