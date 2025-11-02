@@ -13,6 +13,7 @@ class _AnaSayfaState extends State<AnaSayfa> {
   final TextEditingController _kiloController = TextEditingController();
 
   double _sonuc = 0;
+  String _durum = "";
 
   @override
   Widget build(BuildContext context) {
@@ -28,6 +29,11 @@ class _AnaSayfaState extends State<AnaSayfa> {
           children: [
             Text(
               "Vücut Kitle Endeksiniz: ${_sonuc.toStringAsFixed(2)}",
+              style: TextStyle(fontSize: 26, fontWeight: FontWeight.bold),
+            ),
+            SizedBox(height: 16),
+            Text(
+              _durum,
               style: TextStyle(fontSize: 26, fontWeight: FontWeight.bold),
             ),
             SizedBox(height: 16),
@@ -84,6 +90,20 @@ class _AnaSayfaState extends State<AnaSayfa> {
 
       setState(() {
         _sonuc = kilo / (boy * boy);
+
+        if (_sonuc < 18.5) {
+          _durum = "Zayıf";
+        } else if (_sonuc >= 18.5 && _sonuc < 24.9) {
+          _durum = "Normal Kilolu";
+        } else if (_sonuc >= 25 && _sonuc < 29.9) {
+          _durum = "Fazla Kilolu";
+        } else if (_sonuc >= 30 && _sonuc <34.9) {
+          _durum = "Obez (1. Derece)";
+        } else if (_sonuc >= 35 && _sonuc <39.9) {
+          _durum = "Obez (2. Derece)";
+        } else {
+          _durum = "Aşırı Obez (3. Derece)";
+        } 
       });
 
     } catch (e) {
