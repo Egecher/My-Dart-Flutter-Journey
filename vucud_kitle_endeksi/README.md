@@ -38,9 +38,9 @@ Uygulamayı bir emülatörde veya bağlı bir cihazda çalıştırın.
 Uygulama, hesaplanan VKİ sonucunu aşağıdaki uluslararası kabul görmüş sınıflara göre yorumlar:
 
 VKİ Değeri,Kodda Belirtilen Durum
-< 18.5,Zayıf
-18.5 – 24.9,Normal Kilolu
-25.0 – 29.9,Fazla Kilolu
-30.0 – 34.9,Obez (1. Derece)
-35.0 – 39.9,Obez (2. Derece)
-≥ 40.0,Aşırı Obez (3. Derece)
+< 18.5,Zayıf - mavi renk
+18.5 – 24.9,Normal Kilolu - yeşil renk
+25.0 – 29.9,Fazla Kilolu - turuncu renk
+30.0 – 34.9,Obez (1. Derece) - kırmızı renk
+35.0 – 39.9,Obez (2. Derece) - daha koyu(700) kırmızı renk
+≥ 40.0,Aşırı Obez (3. Derece) - dahada koyu(900) kırmızı renk
